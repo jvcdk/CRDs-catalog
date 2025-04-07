@@ -11,10 +11,6 @@ aadpodidentity.k8s.io:
     filename: aadpodidentity.k8s.io/azurepodidentityexception_v1.json
     kind: AzurePodIdentityException
     name: azurepodidentityexception_v1
-  - apiVersion: aadpodidentity.k8s.io/v1
-    filename: aadpodidentity.k8s.io/azureassignedidentity_v1.json
-    kind: AzureAssignedIdentity
-    name: azureassignedidentity_v1
 accesscontextmanager.cnrm.cloud.google.com:
   - apiVersion: accesscontextmanager.cnrm.cloud.google.com/v1beta1
     filename: accesscontextmanager.cnrm.cloud.google.com/accesscontextmanagerserviceperimeter_v1beta1.json
