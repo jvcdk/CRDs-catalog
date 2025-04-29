@@ -11,6 +11,10 @@ aadpodidentity.k8s.io:
     filename: aadpodidentity.k8s.io/azureassignedidentity_v1.json
     kind: AzureAssignedIdentity
     name: azureassignedidentity_v1
+  - apiVersion: aadpodidentity.k8s.io/v1
+    filename: aadpodidentity.k8s.io/azureidentity_v1.json
+    kind: AzureIdentity
+    name: azureidentity_v1
 accesscontextmanager.cnrm.cloud.google.com:
   - apiVersion: accesscontextmanager.cnrm.cloud.google.com/v1beta1
     filename: accesscontextmanager.cnrm.cloud.google.com/accesscontextmanagerserviceperimeter_v1beta1.json
@@ -756,6 +760,14 @@ apps.emqx.io:
     filename: apps.emqx.io/emqx_v2alpha1.json
     kind: emqx
     name: emqx_v2alpha1
+  - apiVersion: apps.emqx.io/v1beta4
+    filename: apps.emqx.io/rebalance_v1beta4.json
+    kind: rebalance
+    name: rebalance_v1beta4
+  - apiVersion: apps.emqx.io/v2beta1
+    filename: apps.emqx.io/rebalance_v2beta1.json
+    kind: rebalance
+    name: rebalance_v2beta1
 apps.gitlab.com:
   - apiVersion: apps.gitlab.com/v1beta1
     filename: apps.gitlab.com/gitlab_v1beta1.json
@@ -984,6 +996,15 @@ awx.ansible.com:
     filename: awx.ansible.com/awxbackup_v1beta1.json
     kind: AWXBackup
     name: awxbackup_v1beta1
+azmonitoring.coreos.com:
+  - apiVersion: azmonitoring.coreos.com/v1
+    filename: azmonitoring.coreos.com/podmonitor_v1.json
+    kind: podmonitor
+    name: podmonitor_v1
+  - apiVersion: azmonitoring.coreos.com/v1
+    filename: azmonitoring.coreos.com/servicemonitor_v1.json
+    kind: servicemonitor
+    name: servicemonitor_v1
 azureprovider.k8s.io:
   - apiVersion: azureprovider.k8s.io/v1alpha1
     filename: azureprovider.k8s.io/azuremachineproviderstatus_v1alpha1.json
@@ -1191,6 +1212,22 @@ bootstrap.cluster.x-k8s.io:
     filename: bootstrap.cluster.x-k8s.io/eksconfig_v1alpha4.json
     kind: EKSConfig
     name: eksconfig_v1alpha4
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1alpha2
+    filename: bootstrap.cluster.x-k8s.io/talosconfigtemplate_v1alpha2.json
+    kind: TalosConfigTemplate
+    name: talosconfigtemplate_v1alpha2
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1alpha2
+    filename: bootstrap.cluster.x-k8s.io/talosconfig_v1alpha2.json
+    kind: TalosConfig
+    name: talosconfig_v1alpha2
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1alpha3
+    filename: bootstrap.cluster.x-k8s.io/talosconfigtemplate_v1alpha3.json
+    kind: TalosConfigTemplate
+    name: talosconfigtemplate_v1alpha3
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1alpha3
+    filename: bootstrap.cluster.x-k8s.io/talosconfig_v1alpha3.json
+    kind: TalosConfig
+    name: talosconfig_v1alpha3
 capsule.clastix.io:
   - apiVersion: capsule.clastix.io/v1beta2
     filename: capsule.clastix.io/tenant_v1beta2.json
@@ -1336,6 +1373,15 @@ certificatemanager.cnrm.cloud.google.com:
     filename: certificatemanager.cnrm.cloud.google.com/certificatemanagercertificatemap_v1beta1.json
     kind: certificatemanagercertificatemap
     name: certificatemanagercertificatemap_v1beta1
+certmanager.step.sm:
+  - apiVersion: certmanager.step.sm/v1beta1
+    filename: certmanager.step.sm/stepissuer_v1beta1.json
+    kind: StepIssuer
+    name: stepissuer_v1beta1
+  - apiVersion: certmanager.step.sm/v1beta1
+    filename: certmanager.step.sm/stepclusterissuer_v1beta1.json
+    kind: StepClusterIssuer
+    name: stepclusterissuer_v1beta1
 chisel-operator.io:
   - apiVersion: chisel-operator.io/v1
     filename: chisel-operator.io/exitnodeprovisioner_v1.json
@@ -1418,6 +1464,26 @@ cilium.io:
     filename: cilium.io/ciliumnodeconfig_v2alpha1.json
     kind: CiliumNodeConfig
     name: ciliumnodeconfig_v2alpha1
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumbgpclusterconfig_v2alpha1.json
+    kind: CiliumBGPClusterConfig
+    name: ciliumbgpclusterconfig_v2alpha1
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumbgpadvertisement_v2alpha1.json
+    kind: CiliumBGPAdvertisement
+    name: ciliumbgpadvertisement_v2alpha1
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumbgpnodeconfig_v2alpha1.json
+    kind: CiliumBGPNodeConfig
+    name: ciliumbgpnodeconfig_v2alpha1
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumbgppeerconfig_v2alpha1.json
+    kind: ciliumbgppeerconfig
+    name: ciliumbgppeerconfig_v2alpha1
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumbgpnodeconfigoverride_v2alpha1.json
+    kind: CiliumBGPNodeConfigOverride
+    name: ciliumbgpnodeconfigoverride_v2alpha1
 cloud.google.com:
   - apiVersion: cloud.google.com/v1beta1
     filename: cloud.google.com/backendconfig_v1beta1.json
@@ -1658,6 +1724,10 @@ cluster.x-k8s.io:
     filename: cluster.x-k8s.io/machineset_v1alpha1.json
     kind: machineset
     name: machineset_v1alpha1
+  - apiVersion: cluster.x-k8s.io/v1beta1
+    filename: cluster.x-k8s.io/machinedrainrule_v1beta1.json
+    kind: MachineDrainRule
+    name: machinedrainrule_v1beta1
 clusterctl.cluster.x-k8s.io:
   - apiVersion: clusterctl.cluster.x-k8s.io/v1alpha3
     filename: clusterctl.cluster.x-k8s.io/provider_v1alpha3.json
@@ -2090,6 +2160,10 @@ controlplane.cluster.x-k8s.io:
     filename: controlplane.cluster.x-k8s.io/kubeadmcontrolplanetemplate_v1beta1.json
     kind: KubeadmControlPlaneTemplate
     name: kubeadmcontrolplanetemplate_v1beta1
+  - apiVersion: controlplane.cluster.x-k8s.io/v1alpha3
+    filename: controlplane.cluster.x-k8s.io/taloscontrolplane_v1alpha3.json
+    kind: TalosControlPlane
+    name: taloscontrolplane_v1alpha3
 core.cnrm.cloud.google.com:
   - apiVersion: core.cnrm.cloud.google.com/v1beta1
     filename: core.cnrm.cloud.google.com/configconnector_v1beta1.json
@@ -2757,6 +2831,22 @@ external-secrets.io:
     filename: external-secrets.io/clusterpushsecret_v1alpha1.json
     kind: clusterpushsecret
     name: clusterpushsecret_v1alpha1
+  - apiVersion: external-secrets.io/v1
+    filename: external-secrets.io/externalsecret_v1.json
+    kind: ExternalSecret
+    name: externalsecret_v1
+  - apiVersion: external-secrets.io/v1
+    filename: external-secrets.io/clustersecretstore_v1.json
+    kind: ClusterSecretStore
+    name: clustersecretstore_v1
+  - apiVersion: external-secrets.io/v1
+    filename: external-secrets.io/secretstore_v1.json
+    kind: SecretStore
+    name: secretstore_v1
+  - apiVersion: external-secrets.io/v1
+    filename: external-secrets.io/clusterexternalsecret_v1.json
+    kind: ClusterExternalSecret
+    name: clusterexternalsecret_v1
 externaldata.gatekeeper.sh:
   - apiVersion: externaldata.gatekeeper.sh/v1alpha1
     filename: externaldata.gatekeeper.sh/provider_v1alpha1.json
@@ -2910,30 +3000,14 @@ fluentbit.fluent.io:
     kind: ClusterParser
     name: clusterparser_v1alpha2
 fluentd.fluent.io:
-  - apiVersion: fluentd.fluent.io/v1alpha2
-    filename: fluentd.fluent.io/clusteroutput_v1alpha2.json
-    kind: ClusterOutput
-    name: clusteroutput_v1alpha2
   - apiVersion: fluentd.fluent.io/v1alpha1
     filename: fluentd.fluent.io/input_v1alpha1.json
     kind: Input
     name: input_v1alpha1
-  - apiVersion: fluentd.fluent.io/v1alpha2
-    filename: fluentd.fluent.io/output_v1alpha2.json
-    kind: Output
-    name: output_v1alpha2
   - apiVersion: fluentd.fluent.io/v1alpha1
     filename: fluentd.fluent.io/clusterinput_v1alpha1.json
     kind: ClusterInput
     name: clusterinput_v1alpha1
-  - apiVersion: fluentd.fluent.io/v1alpha2
-    filename: fluentd.fluent.io/clusterfilter_v1alpha2.json
-    kind: ClusterFilter
-    name: clusterfilter_v1alpha2
-  - apiVersion: fluentd.fluent.io/v1alpha2
-    filename: fluentd.fluent.io/filter_v1alpha2.json
-    kind: Filter
-    name: filter_v1alpha2
   - apiVersion: fluentd.fluent.io/v1alpha1
     filename: fluentd.fluent.io/fluentd_v1alpha1.json
     kind: Fluentd
@@ -2950,10 +3024,6 @@ fluentd.fluent.io:
     filename: fluentd.fluent.io/clusterfluentdconfig_v1alpha1.json
     kind: ClusterFluentdConfig
     name: clusterfluentdconfig_v1alpha1
-  - apiVersion: fluentd.fluent.io/v1alpha2
-    filename: fluentd.fluent.io/clusterinput_v1alpha2.json
-    kind: ClusterInput
-    name: clusterinput_v1alpha2
   - apiVersion: fluentd.fluent.io/v1alpha1
     filename: fluentd.fluent.io/clusterfilter_v1alpha1.json
     kind: ClusterFilter
@@ -3433,6 +3503,18 @@ grafana.integreatly.org:
     filename: grafana.integreatly.org/grafanaalertrulegroup_v1beta1.json
     kind: GrafanaAlertRuleGroup
     name: grafanaalertrulegroup_v1beta1
+  - apiVersion: grafana.integreatly.org/v1beta1
+    filename: grafana.integreatly.org/grafanalibrarypanel_v1beta1.json
+    kind: GrafanaLibraryPanel
+    name: grafanalibrarypanel_v1beta1
+  - apiVersion: grafana.integreatly.org/v1beta1
+    filename: grafana.integreatly.org/grafananotificationpolicyroute_v1beta1.json
+    kind: GrafanaNotificationPolicyRoute
+    name: grafananotificationpolicyroute_v1beta1
+  - apiVersion: grafana.integreatly.org/v1beta1
+    filename: grafana.integreatly.org/grafanamutetiming_v1beta1.json
+    kind: GrafanaMuteTiming
+    name: grafanamutetiming_v1beta1
 graphql.gloo.solo.io:
   - apiVersion: graphql.gloo.solo.io/v1beta1
     filename: graphql.gloo.solo.io/graphqlapi_v1beta1.json
@@ -5845,6 +5927,10 @@ operator.cluster.x-k8s.io:
     filename: operator.cluster.x-k8s.io/infrastructureprovider_v1alpha2.json
     kind: InfrastructureProvider
     name: infrastructureprovider_v1alpha2
+  - apiVersion: operator.cluster.x-k8s.io/v1alpha2
+    filename: operator.cluster.x-k8s.io/runtimeextensionprovider_v1alpha2.json
+    kind: RuntimeExtensionProvider
+    name: runtimeextensionprovider_v1alpha2
 operator.tigera.io:
   - apiVersion: operator.tigera.io/v1
     filename: operator.tigera.io/tigerastatus_v1.json
@@ -6270,6 +6356,10 @@ postgres-operator.crunchydata.com:
     filename: postgres-operator.crunchydata.com/pgadmin_v1beta1.json
     kind: PGAdmin
     name: pgadmin_v1beta1
+  - apiVersion: postgres-operator.crunchydata.com/v1beta1
+    filename: postgres-operator.crunchydata.com/crunchybridgecluster_v1beta1.json
+    kind: CrunchyBridgeCluster
+    name: crunchybridgecluster_v1beta1
 postgresql.cnpg.io:
   - apiVersion: postgresql.cnpg.io/v1
     filename: postgresql.cnpg.io/backup_v1.json
@@ -7195,6 +7285,27 @@ tags.cnrm.cloud.google.com:
     filename: tags.cnrm.cloud.google.com/tagstagkey_v1beta1.json
     kind: tagstagkey
     name: tagstagkey_v1beta1
+tailscale.com:
+  - apiVersion: tailscale.com/v1alpha1
+    filename: tailscale.com/connector_v1alpha1.json
+    kind: Connector
+    name: connector_v1alpha1
+  - apiVersion: tailscale.com/v1alpha1
+    filename: tailscale.com/dnsconfig_v1alpha1.json
+    kind: DNSConfig
+    name: dnsconfig_v1alpha1
+  - apiVersion: tailscale.com/v1alpha1
+    filename: tailscale.com/proxyclass_v1alpha1.json
+    kind: ProxyClass
+    name: proxyclass_v1alpha1
+  - apiVersion: tailscale.com/v1alpha1
+    filename: tailscale.com/recorder_v1alpha1.json
+    kind: recorder
+    name: recorder_v1alpha1
+  - apiVersion: tailscale.com/v1alpha1
+    filename: tailscale.com/proxygroup_v1alpha1.json
+    kind: proxygroup
+    name: proxygroup_v1alpha1
 telemetry.istio.io:
   - apiVersion: telemetry.istio.io/v1
     filename: telemetry.istio.io/telemetry_v1.json
