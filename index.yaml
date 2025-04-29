@@ -1,9 +1,5 @@
 aadpodidentity.k8s.io:
   - apiVersion: aadpodidentity.k8s.io/v1
-    filename: aadpodidentity.k8s.io/azureidentity_v1.json
-    kind: AzureIdentity
-    name: azureidentity_v1
-  - apiVersion: aadpodidentity.k8s.io/v1
     filename: aadpodidentity.k8s.io/azureidentitybinding_v1.json
     kind: AzureIdentityBinding
     name: azureidentitybinding_v1
