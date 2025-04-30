@@ -11,6 +11,10 @@ aadpodidentity.k8s.io:
     filename: aadpodidentity.k8s.io/azureidentity_v1.json
     kind: AzureIdentity
     name: azureidentity_v1
+  - apiVersion: aadpodidentity.k8s.io/v1
+    filename: aadpodidentity.k8s.io/azureidentitybinding_v1.json
+    kind: AzureIdentityBinding
+    name: azureidentitybinding_v1
 accesscontextmanager.cnrm.cloud.google.com:
   - apiVersion: accesscontextmanager.cnrm.cloud.google.com/v1beta1
     filename: accesscontextmanager.cnrm.cloud.google.com/accesscontextmanageraccesspolicy_v1beta1.json
@@ -36,6 +40,10 @@ accesscontextmanager.cnrm.cloud.google.com:
     filename: accesscontextmanager.cnrm.cloud.google.com/accesscontextmanagerserviceperimeterresource_v1beta1.json
     kind: accesscontextmanagerserviceperimeterresource
     name: accesscontextmanagerserviceperimeterresource_v1beta1
+  - apiVersion: accesscontextmanager.cnrm.cloud.google.com/v1beta1
+    filename: accesscontextmanager.cnrm.cloud.google.com/accesscontextmanagerserviceperimeter_v1beta1.json
+    kind: accesscontextmanagerserviceperimeter
+    name: accesscontextmanagerserviceperimeter_v1beta1
 acid.zalan.do:
   - apiVersion: acid.zalan.do/v1
     filename: acid.zalan.do/postgresql_v1.json
