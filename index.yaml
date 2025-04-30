@@ -13,10 +13,6 @@ aadpodidentity.k8s.io:
     name: azureidentity_v1
 accesscontextmanager.cnrm.cloud.google.com:
   - apiVersion: accesscontextmanager.cnrm.cloud.google.com/v1beta1
-    filename: accesscontextmanager.cnrm.cloud.google.com/accesscontextmanagerserviceperimeter_v1beta1.json
-    kind: accesscontextmanagerserviceperimeter
-    name: accesscontextmanagerserviceperimeter_v1beta1
-  - apiVersion: accesscontextmanager.cnrm.cloud.google.com/v1beta1
     filename: accesscontextmanager.cnrm.cloud.google.com/accesscontextmanageraccesspolicy_v1beta1.json
     kind: accesscontextmanageraccesspolicy
     name: accesscontextmanageraccesspolicy_v1beta1
