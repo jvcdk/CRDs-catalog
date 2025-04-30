@@ -1,6 +1,8 @@
 name: Update index.yaml
 on:
   pull_request:
+    branches:
+      - main
     types:
       - closed
 jobs:
